@@ -1,0 +1,43 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>{{ page.title }} - {{ site.title }}</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap');
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<script>
+	tailwind.config = {
+      theme: {
+		  fontFamily: {
+			  sans: ['"Source Sans Pro"', 'sans-serif'],
+			  serif: ['"Source Serif Pro"', 'serif'],
+			  mono: ['"Source Code Pro"', 'monospaced'],
+			  meleo: ['"Meleo"', 'serif'],
+		  },
+        extend: {
+          colors: {
+            'rodeo-sunburn-100': '#DF8FAA',
+            'rodeo-sunburn-300': '#BA3F5E',
+            'rodeo-sunburn-500': '#8B1D30',
+            'rodeo-sunburn-700': '#4E0808',
+            'rodeo-sunburn-900': '#330E0E',
+
+			'rodeo-skyblue-100': '#97E1E0',
+			'rodeo-skyblue-300': '#5CABC5',
+			'rodeo-skyblue-500': '#247DB3',
+			'rodeo-skyblue-700': '#1A4D88',
+			'rodeo-skyblue-900': '#041E66',
+
+			'rodeo-leather-100': '#E29D4F',
+			'rodeo-leather-300': '#ab5d30',
+			'rodeo-leather-500': '#8b451e',
+			'rodeo-leather-700': '#5a2900',
+			'rodeo-leather-900': '#1D0901',
+          }
+        }
+      }
+	}
+</script>
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
