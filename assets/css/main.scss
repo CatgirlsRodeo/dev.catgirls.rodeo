@@ -31,3 +31,43 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+ul a.navcollapse + div.navcollapsechild {
+  max-height:0;
+  opacity: 0;
+  overflow:hidden;
+  transition:0.5s ease;
+  }
+ul a.navcollapse:focus + div.navcollapsechild {
+  max-height:15em;
+  opacity: 1;
+  }
+/* only select that link , here using the href attribute */
+a.navcollapse[href="colonthree"]:focus {
+  pointer-events: none;
+}
+
+@keyframes changeContent {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		content: "⮟";
+	}
+}
+
+a.navcollapse div#arrow:before {
+	content: "➤";
+	transition: all 0.0s linear;
+	animation-direction: reverse;
+}
+
+a.navcollapse:focus div#arrow:before {
+  animation-fill-mode: forwards;
+  animation: changeContent 0.0s ease forwards;
+  animation-direction: forwards;
+}
