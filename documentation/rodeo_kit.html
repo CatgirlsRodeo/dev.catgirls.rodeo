@@ -8,12 +8,12 @@ subdomain: dev
 	<div class="flex min-w-0 flex-row justify-center mx-4 sm:mx-8">
 		<!-- left sidebar -->
 		<!--<div class="top-44 sticky self-start mr-8 mt-8 min-w-[225px]">-->
-		<div id="sidebar" class="transition-all top-2 -left-[225px] hover:left-2 lg:hover:left-auto lg:top-44 lg:left-auto fixed lg:sticky self-start mr-8 lg:mt-8 min-w-[225px] flex flex-row rounded pointer-events-none lg:pointer-events-auto z-1">
+		<div id="sidebar" class="transition-all top-2 -left-[225px] hover:left-2 lg:hover:left-auto lg:top-44 lg:left-auto fixed lg:sticky self-start mr-8 lg:mt-8 min-w-[225px] flex flex-row rounded pointer-events-none lg:pointer-events-auto z-10">
 			<div class="pointer-events-auto">
-			<nav class="navbar-content min-w-[225px] font-meleo bg-stone-900/90 p-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
+			<nav class="navbar-content min-w-[225px] font-meleo bg-stone-900 lg:bg-stone-900/90 p-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
 				<ul>
 					<li class="border-b-[1px] border-stone-200">
-						<a href=#colonthree class="navcollapse text-stone-200 hover:text-stone-400"><div id="arrow" class="font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">Navigation</div></a>
+						<a href=#colonthree class="navcollapse text-stone-200 hover:text-stone-400"><div id="arrow" class="font-symbola inline text-lg"></div><div class="select-none inline text-lg decoration-1">Navigation</div></a>
 						<div class="navcollapsechild">
 							<ul class="pl-1 pr-1 text-md">
 								<li><a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><div class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Link</div></a></li>
@@ -35,7 +35,7 @@ subdomain: dev
 				</ul>
 				<ul class="pt-4">
 					<li class="border-b-[1px] border-stone-200">
-						<div id="" href=#colonthree><div id="" class="select-none font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">⮟Table of Contents</div></div>
+						<div id="" href=#colonthree><div id="" class="select-none font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1"><span class="font-symbola">⮟</span>Table of Contents</div></div>
 						<ul class="pl-1 pr-1 text-md">
 							<!--li><a href="./dummy" class="text-rodeo-skyblue-300 hover:underline ml-1 mr-1 pl-1">RCore</a></li-->
 							{% for code in site.cheatsheet_code %}
@@ -45,7 +45,7 @@ subdomain: dev
 						</li>
 				</ul>
 			</nav>
-		<div class="min-w-[225px] min-h-[200px] font-meleo bg-stone-900/90 p-5 mt-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
+		<div class="min-w-[225px] min-h-[200px] font-meleo bg-stone-900 lg:bg-stone-900/90 p-5 mt-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
 			<div class="text-stone-600">Maybe some kind of social media or recently made game links here or smthn.</div>
 		</div>
 			</div>
@@ -57,18 +57,18 @@ subdomain: dev
 			{% for code in site.cheatsheet_code %}
 			<div id="{{ code.id }}" class="pt-4">
 				<!-- title -->
-				<div class="relative -z-40 mb-4">
+				<div class="relative mb-4 mr-2"><!-- -z-40 -->
 					<div class="absolute inset-0 flex items-center" aria-hidden="true">
 						<div class="w-full border-t border-stone-300"></div>
 					</div>
 					<div class="relative flex justify-start">
-						<a href="#{{ code.id }}" id="{{ code.id }}">
+						<a href="#{{ code.id }}" id="{{ code.id }}" class="">
 							<span class="bg-stone-950 rounded-md pr-3 leading-6 font-meleo text-4xl text-{{ code.color }}-400 hover:text-{{ code.color }}-500">{{ code.title }}</span>
 						</a>
 					</div>
 				</div>
 				<!-- -->
-				<div class="min-w-0 bg-stone-950/90 p-5 border-x-4 border-{{ code.color }}-400 top-0 max-w-[1200px] rounded-md">
+				<div class="min-w-0 bg-stone-950 lg:bg-stone-950/90 p-5 border-x-4 border-{{ code.color }}-400 top-0 max-w-[1200px] rounded-md">
 					<div class="min-w-0 rounded-xl bg-stone-900 pl-4 pt-2 pb-2 text-md shrink" style="box-shadow: rgba(255,255,255,.1) 0 1px 0,rgba(0,0,0,.8) 0 1px 7px 0 inset;">
 						{{ code.content }}
 					</div>

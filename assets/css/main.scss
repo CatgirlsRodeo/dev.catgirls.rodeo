@@ -5,6 +5,13 @@
 @import "base";
 
 @font-face {
+	font-family: "Symbola";
+	src: url("/assets/symbola.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: "Meleo";
 	src: url("/assets/meleo.woff");
 	font-weight: normal;
