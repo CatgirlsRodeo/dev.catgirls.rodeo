@@ -5,49 +5,48 @@ subdomain: dev
 ---
 
 <div class="flex justify-center">
-	<div class="flex min-w-0 flex-row justify-center">
+	<div class="flex min-w-0 flex-row justify-center mx-8">
 		<!-- left sidebar -->
-		<nav class="min-w-[225px] font-meleo bg-stone-900 p-5 m-8 sticky top-52 w-[225px] self-start flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
-			<ul>
-				<li class="border-b-[1px] border-stone-200">
-					<a href=#colonthree class="navcollapse text-stone-200 hover:text-stone-400"><div id="arrow" class="font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">Navigation</div></a>
-					<div class="navcollapsechild">
-					<ul class="pl-1 pr-1 text-md">
-						<li><a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><div class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Link</div></a></li>
-						<li><ul class="pl-2 pr-1">
-							<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
-							<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
-							</ul></li>
-					</ul>
-					<ul class="pl-1 pr-1 text-md">
-						<a href="./dummy" class="text-rodeo-sunburn-300 hover:text-rodeo-sunburn-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-sunburn-500/10 rounded">Documentation</li></a>
-						<li><ul class="pl-2 pr-1">
-							<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
-							<a href="./dummy" class="text-rodeo-sunburn-300 hover:text-rodeo-sunburn-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-sunburn-500/10 rounded">Rodeo Kit Cheatsheet</li></a>
-							<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
-							</ul></li>
-					</ul>
-					</div>
-				</li>
-			</ul>
-			<ul class="pt-4">
-				<li class="border-b-[1px] border-stone-200">
-					<div id="" href=#colonthree><div id="" class="select-none font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">⮟Table of Contents</div></div>
-					<ul class="pl-1 pr-1 text-md">
-						<!--li><a href="./dummy" class="text-rodeo-skyblue-300 hover:underline ml-1 mr-1 pl-1">RCore</a></li-->
-				{% for code in site.cheatsheet_code %}
-						<a href="#{{ code.id }}" class="text-{{ code.color }}-400 hover:text-{{ code.color }}-500 hover:underline  rounded"><li class="pl-1 hover:bg-{{ code.color }}-500/10 rounded">{{ code.title }}</li></a>
-				{% endfor %}
-					</ul>
-				</li>
-			</ul>
-			<!--div class=" pt-4 text-lg underline decoration-1 underline-offset-8">⮟Table of Contents</div>
-			<div class="flex flex-col text-rodeo-skyblue-500 decoration-1 pt-1">
-				{% for code in site.cheatsheet_code %}
-				<a href="#{{ code.id }}" class="ml-1 mr-1 pl-1 text-{{ code.color }}-400 hover:text-{{ code.color }}-500 hover:underline hover:bg-{{ code.color }}-500/10 rounded">{{ code.title }}</a>
-				{% endfor %}
-			</div-->
-		</nav>
+		<div class="top-44 sticky self-start mr-8 mt-8 min-w-[225px]">
+			<nav class="min-w-[225px] font-meleo bg-stone-900/90 p-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
+				<ul>
+					<li class="border-b-[1px] border-stone-200">
+						<a href=#colonthree class="navcollapse text-stone-200 hover:text-stone-400"><div id="arrow" class="font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">Navigation</div></a>
+						<div class="navcollapsechild">
+							<ul class="pl-1 pr-1 text-md">
+								<li><a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><div class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Link</div></a></li>
+								<li><ul class="pl-2 pr-1">
+										<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
+										<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
+									</ul></li>
+							</ul>
+							<ul class="pl-1 pr-1 text-md">
+								<a href="./dummy" class="text-rodeo-sunburn-300 hover:text-rodeo-sunburn-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-sunburn-500/10 rounded">Documentation</li></a>
+								<li><ul class="pl-2 pr-1">
+										<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
+										<a href="./dummy" class="text-rodeo-sunburn-300 hover:text-rodeo-sunburn-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-sunburn-500/10 rounded">Rodeo Kit Cheatsheet</li></a>
+										<a href="./dummy" class="text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500 hover:underline rounded"><li class="pl-1 hover:bg-rodeo-skyblue-500/10 rounded">Dummy Sub-Link</li></a>
+									</ul></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul class="pt-4">
+					<li class="border-b-[1px] border-stone-200">
+						<div id="" href=#colonthree><div id="" class="select-none font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">⮟Table of Contents</div></div>
+						<ul class="pl-1 pr-1 text-md">
+							<!--li><a href="./dummy" class="text-rodeo-skyblue-300 hover:underline ml-1 mr-1 pl-1">RCore</a></li-->
+							{% for code in site.cheatsheet_code %}
+							<a href="#{{ code.id }}" class="text-{{ code.color }}-400 hover:text-{{ code.color }}-500 hover:underline  rounded"><li class="pl-1 hover:bg-{{ code.color }}-500/10 rounded">{{ code.title }}</li></a>
+							{% endfor %}
+						</ul>
+						</li>
+				</ul>
+			</nav>
+		<div class="min-w-[225px] min-h-[200px] font-meleo bg-stone-900/90 p-5 mt-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
+			<div class="text-stone-600">Maybe some kind of social media or recently made game links here or smthn.</div>
+		</div>
+	</div>
 		<!-- -->
 		<!-- cheatsheet content -->
 		<div class="flex flex-col gap-16 min-w-0">
@@ -75,9 +74,6 @@ subdomain: dev
 		</div>
 		<!-- -->
 		<!-- right sidebar -->
-		<div class="min-w-[225px] min-h-[200px] font-meleo bg-stone-900 p-5 m-8 sticky top-10 w-[225px] self-start flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
-			<div class="text-stone-600">Maybe some kind of social media or recently made game links here or smthn.</div>
-		</div>
 		<!-- -->
 	</div>
 </div>
