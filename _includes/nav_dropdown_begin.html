@@ -1,0 +1,41 @@
+<nav class="navbar-content min-w-[225px] font-meleo bg-stone-900 lg:bg-stone-900/90 p-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
+	<ul>
+		<li class="border-b-[1px] border-stone-200">
+			<a href=#colonthree class="navcollapse text-stone-200 hover:text-stone-400"><div id="arrow" class="font-symbola inline text-lg"></div><div class="select-none inline text-lg decoration-1">Navigation</div></a>
+			<div class="navcollapsechild">
+				<ul class="pl-1 pr-1 text-md">
+					<a href="/documentation"
+					   class="
+							  {% if include.main == "doc" %}
+													 text-rodeo-sunburn-300 hover:text-rodeo-sunburn-500
+													 {% else %}
+													 text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500
+													 {% endif %}
+													 hover:underline rounded">
+						<li class="pl-1
+								   {% if include.main == "doc" %}
+														  hover:bg-rodeo-skyblue-500/10
+														  {% else %}
+														  hover:bg-rodeo-skyblue-500/10
+														  {% endif %}
+														  rounded">Documentation</li></a>
+					<li><ul class="pl-2 pr-1">
+							<a href="/documentation/rodeo_kit_cheatsheet" class="
+									 {% if include.sub == "rodeo_kit_cheatsheet" %}
+														   text-rodeo-sunburn-300 hover:text-rodeo-sunburn-500
+														   {% else %}
+														   text-rodeo-skyblue-300 hover:text-rodeo-skyblue-500
+														   {% endif %}
+														   hover:underline rounded">
+								<li class="pl-1
+										   {% if include.sub == "rodeo_kit_cheatsheet" %}
+																 hover:bg-rodeo-sunburn-500/10
+																 {% else %}
+																 hover:bg-rodeo-skyblue-500/10
+																 {% endif %}
+																 rounded">Rodeo Kit Cheatsheet</li></a>
+						</ul></li>
+				</ul>
+			</div>
+		</li>
+	</ul>

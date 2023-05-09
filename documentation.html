@@ -1,0 +1,49 @@
+---
+layout: default
+title: "Documentation by Tradam :3"
+subdomain: dev
+---
+
+{% capture includeGuts %}
+<div class="flex justify-center">
+<div class="flex min-w-0 flex-row justify-center mx-4 sm:mx-8">
+<!-- left sidebar -->
+{% include sidebar_begin.html %}
+{% include nav_dropdown_begin.html main="doc" sub="none" %}
+<!-- table of contents -->
+<!-- <ul class="pt-4">
+<li class="border-b-[1px] border-stone-200">
+<div id="" href=#colonthree>
+<div id="" class="select-none font-mono inline text-lg">
+</div>
+<div class="select-none inline text-lg decoration-1"><span class="font-symbola">⮟</span>Table of Contents</div></div>
+<ul class="pl-1 pr-1 text-md"> -->
+<!--<a href="#{{ code.id }}" class="text-{{ code.color }}-400 hover:text-{{ code.color }}-500 hover:underline  rounded"><li class="pl-1 hover:bg-{{ code.color }}-500/10 rounded">{{ code.title }}</li></a>-->
+<!-- </ul>
+</li>
+</ul> -->
+<!-- -->
+{% include nav_dropdown_end.html %}
+{% include promotion.html %}
+{% include sidebar_end.html %}
+<!-- -->
+<!-- cheatsheet content -->
+<div class="flex flex-col gap-16 min-w-0">
+<div id="documentation" class="pt-4">
+{% include article_title.html color="stone" id="documentation" title="Documentation" %}
+{% include article_begin.html size="xl" color=code.color %}
+{% capture myInclude %}
+
+# Welcome  
+
+This is the documentation site where I will be deploying any new documentation I construct for my various projects. Check out the side-bar on the left to see what is available now.
+
+{% endcapture %}
+{{ myInclude | markdownify }}
+{% include article_end.html %}
+</div>
+</div>
+</div>
+</div>
+{% endcapture %}
+{{ includeGuts | replace: '    ', ''}}
