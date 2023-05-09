@@ -5,10 +5,12 @@ subdomain: dev
 ---
 
 <div class="flex justify-center">
-	<div class="flex min-w-0 flex-row justify-center mx-8">
+	<div class="flex min-w-0 flex-row justify-center mx-4 sm:mx-8">
 		<!-- left sidebar -->
-		<div class="top-44 sticky self-start mr-8 mt-8 min-w-[225px]">
-			<nav class="min-w-[225px] font-meleo bg-stone-900/90 p-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
+		<!--<div class="top-44 sticky self-start mr-8 mt-8 min-w-[225px]">-->
+		<div id="sidebar" class="transition-all top-2 -left-[225px] hover:left-2 lg:hover:left-auto lg:top-44 lg:left-auto fixed lg:sticky self-start mr-8 lg:mt-8 min-w-[225px] flex flex-row rounded pointer-events-none lg:pointer-events-auto z-1">
+			<div class="pointer-events-auto">
+			<nav class="navbar-content min-w-[225px] font-meleo bg-stone-900/90 p-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
 				<ul>
 					<li class="border-b-[1px] border-stone-200">
 						<a href=#colonthree class="navcollapse text-stone-200 hover:text-stone-400"><div id="arrow" class="font-mono inline text-lg"></div><div class="select-none inline text-lg decoration-1">Navigation</div></a>
@@ -46,6 +48,8 @@ subdomain: dev
 		<div class="min-w-[225px] min-h-[200px] font-meleo bg-stone-900/90 p-5 mt-5 w-[225px] flex justify-center flex-col rounded-md" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">
 			<div class="text-stone-600">Maybe some kind of social media or recently made game links here or smthn.</div>
 		</div>
+			</div>
+			<div class="navbar-button text-rodeo-skyblue-500 lg:hidden self-start bg-stone-900 rounded text-5xl ml-2 h-[53px] w-[50px] leading-[52px] text-center pointer-events-auto" style="box-shadow: inset 0px 3px 0 rgb(41 37 36), 0 4px 6px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9);">≡</div>
 	</div>
 		<!-- -->
 		<!-- cheatsheet content -->
@@ -53,7 +57,7 @@ subdomain: dev
 			{% for code in site.cheatsheet_code %}
 			<div id="{{ code.id }}" class="pt-4">
 				<!-- title -->
-				<div class="relative mb-4">
+				<div class="relative -z-40 mb-4">
 					<div class="absolute inset-0 flex items-center" aria-hidden="true">
 						<div class="w-full border-t border-stone-300"></div>
 					</div>
