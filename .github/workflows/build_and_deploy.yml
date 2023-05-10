@@ -56,7 +56,8 @@ jobs:
       - name: "Build cheatsheet for Rodeo Kit"
         run: |
           doxygen RodeoKit/Doxyfile &&\
-          ${{ github.workspace }}_scripts/build_doxygen.rb RodeoKit/doxygen &&\
+          echo $(ls) &&\
+          /home/runner/work/dev.catgirls.rodeo/dev.catgirls.rodeo/_scripts/build_doxygen.rb RodeoKit/doxygen &&\
           mv docs/* dev.catgirls.rodeo/_cheatsheet_code
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
