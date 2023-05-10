@@ -48,7 +48,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: realtradam/RodeoKit
-          token: realtradam:${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
       - name: "Build cheatsheet for Rodeo Kit"
         run: |
           doxygen RodeoKit/Doxyfile &&\
