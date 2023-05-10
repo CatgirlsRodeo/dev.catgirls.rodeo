@@ -60,7 +60,8 @@ jobs:
           echo $(ls RodeoKit) &&\
           echo $(ls ${{ github.workspace }}) &&\
           ruby /home/runner/work/dev.catgirls.rodeo/dev.catgirls.rodeo/_scripts/build_doxygen.rb ./RodeoKit &&\
-          mv docs/* dev.catgirls.rodeo/_cheatsheet_code
+          mv docs/* _cheatsheet_code &&\
+          rm -r docs
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
