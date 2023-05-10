@@ -45,9 +45,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Check out Rodeo Kit
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
           repository: realtradam/RodeoKit
+          path: ./RodeoKit
           token: ${{ secrets.ACCESS_TOKEN }}
       - name: Install Doxygen
         run: sudo apt-get install doxygen -y
