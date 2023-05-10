@@ -1,4 +1,5 @@
 #!/bin/ruby
+require 'fileutils'
 require "rexml/document"
 
 path = ARGV[0]
