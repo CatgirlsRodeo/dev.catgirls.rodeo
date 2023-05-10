@@ -49,6 +49,9 @@ jobs:
         with:
           repository: realtradam/RodeoKit
           token: ${{ secrets.ACCESS_TOKEN }}
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen -y
+        shell: bash
       - name: "Build cheatsheet for Rodeo Kit"
         run: |
           doxygen RodeoKit/Doxyfile &&\
