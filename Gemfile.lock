@@ -83,6 +83,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.3)
   jekyll-mentions
+  rexml (~> 3.2)
 
 BUNDLED WITH
    2.4.12

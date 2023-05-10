@@ -7,3 +7,5 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 #gem "jekyll-theme-catgirls-rodeo", path: "/home/tradam/Documents/Web/jekyll-theme-catgirls-rodeo"
 gem 'jekyll-mentions'
+
+gem "rexml", "~> 3.2"
