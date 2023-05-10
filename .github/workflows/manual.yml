@@ -29,6 +29,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Check default dir
-      run: ls
+      run: echo $(ls)
     - name: Check workspace
-      run: ls ${{ github.workspace }}
+      run: echo $(ls ${{ github.workspace }})
