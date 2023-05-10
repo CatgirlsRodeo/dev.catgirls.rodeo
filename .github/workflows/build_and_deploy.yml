@@ -50,7 +50,7 @@ jobs:
           repository: realtradam/RodeoKit
           token: ${{ secrets.ACCESS_TOKEN }}
       - name: "Build cheatsheet for Rodeo Kit"
-      - run: |
+        run: |
           doxygen RodeoKit/Doxyfile &&\
           ./${{ github.workspace }}/_scripts/build_doxygen.rb RodeoKit/doxygen &&\
           mv docs/* ${{ github.workspace }}/_cheatsheet_code
