@@ -11,15 +11,16 @@ class CodeModule
     self.title = title
     self.color = color
     self.files = files
-    self.code = ""
+    self.code = ''
   end
 end
 
 code_modules = [
-  CodeModule.new(title: "Core", files: ['rodeo_8h.xml', 'common_8h.xml'], color: "stone"),
-  CodeModule.new(title: "Audio", files: ['audio_8h.xml'], color: "blue"),
-  CodeModule.new(title: "Input", files: ['input_8h.xml'], color: "red"),
-  CodeModule.new(title: "Log", files: ['log_8h.xml'], color: "yellow"),
+  CodeModule.new(title: 'Core', files: ['rodeo_8h.xml', 'common_8h.xml'], color: 'stone'),
+  CodeModule.new(title: 'Audio', files: ['audio_8h.xml'], color: 'blue'),
+  CodeModule.new(title: 'Input', files: ['input_8h.xml'], color: 'red'),
+  CodeModule.new(title: 'Log', files: ['log_8h.xml'], color: 'yellow'),
+  CodeModule.new(title: 'Collision', files: ['collision_8h.xml'], color: 'green')
 ]
 code_modules.each_with_index do |mod, index|
   mod.files.each do |file|
