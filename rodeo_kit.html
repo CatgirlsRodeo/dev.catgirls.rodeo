@@ -9,7 +9,7 @@ subdomain: dev
 <div class="flex min-w-0 flex-row justify-center mx-4 sm:mx-8">
 <!-- left sidebar -->
 {% include sidebar_begin.html %}
-{% include nav_dropdown_begin.html main="doc" sub="none" %}
+{% include nav_dropdown_begin.html main="rodeo_kit" sub="none" %}
 <!-- table of contents -->
 <!-- <ul class="pt-4">
 <li class="border-b-[1px] border-stone-200">
@@ -29,14 +29,19 @@ subdomain: dev
 <!-- -->
 <!-- cheatsheet content -->
 <div class="flex flex-col gap-16 min-w-0">
-<div id="documentation" class="pt-4">
-{% include article_title.html color="stone" id="documentation" title="Documentation" %}
+<div id="rodeo_kit" class="pt-4">
+{% include article_title.html color="white" id="rodeo_kit" title="Rodeo Kit" %}
 {% include article_begin.html size="xl" color=code.color %}
 {% capture myInclude %}
 
-# Welcome  
+Rodeo Kit is a collection of game development libraries that act as a hobby game engine when combined together. It is still in the early months of developments so there are no complete examples or games yet other then the basic development stress test.
 
-This is the documentation site where I will be deploying any new documentation I construct for my various projects. Check out the side-bar on the left to see what is available now.
+#### The main goals of this project are:
+- To learn more and research about the low level components of graphics and game development.
+- Having a Web Browser export in addition to a Desktop export(Windows and Linux)
+- Fast development velocity and iteration times when developing games.
+- Using C for performance critical sections and embedding mruby for iterating on game mechanics.
+- Documented C and Ruby API, as well as automated building and deployment of accessable documentation.
 
 {% endcapture %}
 {{ myInclude | markdownify }}
