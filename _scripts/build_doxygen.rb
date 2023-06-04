@@ -16,7 +16,9 @@ class CodeModule
 end
 
 code_modules = [
-  CodeModule.new(title: 'Core', files: ['rodeo_8h.xml', 'common_8h.xml'], color: 'stone'),
+  CodeModule.new(title: 'Core', files: ['rodeo_8h.xml', 'common_8h.xml'], color: 'zinc'),
+  CodeModule.new(title: 'Window', files: ['window_8h.xml'], color: 'stone'),
+  CodeModule.new(title: 'Gfx', files: ['gfx_8h.xml'], color: 'purple'),
   CodeModule.new(title: 'Audio', files: ['audio_8h.xml'], color: 'blue'),
   CodeModule.new(title: 'Input', files: ['input_8h.xml'], color: 'red'),
   CodeModule.new(title: 'Log', files: ['log_8h.xml'], color: 'yellow'),
