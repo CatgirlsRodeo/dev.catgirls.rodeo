@@ -22,7 +22,8 @@ code_modules = [
   CodeModule.new(title: 'Audio', files: ['audio_8h.xml'], color: 'blue'),
   CodeModule.new(title: 'Input', files: ['input_8h.xml'], color: 'red'),
   CodeModule.new(title: 'Log', files: ['log_8h.xml'], color: 'yellow'),
-  CodeModule.new(title: 'Collision', files: ['collision_8h.xml'], color: 'green')
+  CodeModule.new(title: 'Collision', files: ['collision_8h.xml'], color: 'green'),
+  CodeModule.new(title: 'Math', files: ['math_8h.xml', 'rng_8h.xml', 'mat4_8.xml', 'vec2_8.xml', 'vec3_h.xml'], color: 'sky'),
 ]
 code_modules.each_with_index do |mod, index|
   mod.files.each do |file|
