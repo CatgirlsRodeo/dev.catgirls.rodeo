@@ -1,4 +1,4 @@
-.highlight pre { background-color: rgb(12 10 9 / 0.0); overflow-x: scroll; }
+.highlight pre { background-color: rgb(12 10 9 / 0.0); overflow-x: auto; }
 .highlight .hll { background-color: rgb(12 10 9 / 0.0);  }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
