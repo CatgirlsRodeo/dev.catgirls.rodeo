@@ -1,4 +1,12 @@
-.highlight pre { background-color: rgb(12 10 9 / 0.0); overflow-x: auto; }
+.highlight pre {
+	background-color: rgb(12 10 9 / 0.0);
+	scrollbar-color: rgb(214 211 209) rgba(87, 83, 78, 0);
+	overflow-x: auto;
+	padding-bottom: 8px;
+}
+.highlight pre::-webkit-scrollbar { height: 10px; width: 10px; }
+.highlight pre::-webkit-scrollbar-thumb { background: rgb(214 211 209); border-radius: 10px; }
+.highlight pre::-webkit-scrollbar-track { background: rgb(87 83 78); border-radius: 10px; margin-right: 16px; }
 .highlight .hll { background-color: rgb(12 10 9 / 0.0);  }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
